@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: rgb(118 123 152);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin: 80px auto;
+    background-color: rgb(52 57 87);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.display {
+    padding: 8px;
+    border: 3px solid rgb(38 45 75);
+    border-bottom: none;
+}
+
+.display_expression {
+    font-size: 12px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    opacity: .6;
+}
+
+.display_current {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current_operator {
+    font-size: 30px;
+}
+
+.current_operand {
+    font-size: 46px;
+}
+.current_operand.small {
+    font-size: 30px;
+}
+
+.controllers {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(38 45 75);
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+
+.controllers_table {
+    border-collapse: collapse;
+    font-weight: bold;
+    width: 100%;
+}
+
+.controllers_table td {
+    background-color: rgb(52 57 87);
+    border: 2px solid rgb(38 45 75);
+    height: 60px;
+    width: 64px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.controllers_table td:hover {
+    background-color: rgb(79, 87, 136);
+}
+
+.controllers_table td.gray {
+    background-color: rgb(79 85 111);
+    color: #ff3664;
+}
+.controllers_table td.gray:hover {
+    background-color: rgb(106, 113, 146);
+}
+
+.controllers_table td.red {
+    background-color: #ff3664;
+}
+.controllers_table td.red:hover {
+    background-color: #ff4b75;
+}

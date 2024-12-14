@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+
     <title>Calculadora</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="display">
+            <div class="display_expression"></div>
+            <div class="display_current">
+                <div class="current_operator">+</div>
+                <div class="current_operand small">0</div>
+            </div>
+        </div>
+        <div class="controllers">
+            <table class="controllers_table">
+                <tr>
+                    <td class="gray">C</td>
+                    <td class="gray">%</td>
+                    <td class="gray">/</td>
+                    <td class="gray">X</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="gray">-</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="gray">+</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="red" rowspan="2">=</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>.</td>
+                    <td>B</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
