@@ -15,44 +15,46 @@
         <div class="display">
             <div class="display_expression"></div>
             <div class="display_current">
-                <div class="current_operator">+</div>
-                <div class="current_operand small">0</div>
+                <div class="current_operator"></div>
+                <div class="current_operand">0</div>
             </div>
         </div>
         <div class="controllers">
             <table class="controllers_table">
                 <tr>
-                    <td class="gray">C</td>
-                    <td class="gray">%</td>
-                    <td class="gray">/</td>
-                    <td class="gray">X</td>
+                    <td data-digit-clear="C" class="gray">C</td>
+                    <td data-digit-percent="%" class="gray">%</td>
+                    <td data-digit-oper="/" class="gray">&divide;</td>
+                    <td data-digit-oper="*" class="gray">&times;</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td class="gray">-</td>
+                    <td data-digit-num="7">7</td>
+                    <td data-digit-num="8">8</td>
+                    <td data-digit-num="9">9</td>
+                    <td data-digit-oper="-" class="gray">&minus;</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td class="gray">+</td>
+                    <td data-digit-num="4">4</td>
+                    <td data-digit-num="5">5</td>
+                    <td data-digit-num="6">6</td>
+                    <td data-digit-oper="+" class="gray">+</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td class="red" rowspan="2">=</td>
+                    <td data-digit-num="1">1</td>
+                    <td data-digit-num="2">2</td>
+                    <td data-digit-num="3">3</td>
+                    <td data-digit-calc="=" class="red" rowspan="2">=</td>
                 </tr>
                 <tr>
-                    <td>0</td>
-                    <td>.</td>
-                    <td>B</td>
+                    <td data-digit-num="0">0</td>
+                    <td data-digit-dot=".">&bull;</td>
+                    <td data-digit-backspace="B">&larr;</td>
                 </tr>
             </table>
         </div>
     </div>
+
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 
 </html>

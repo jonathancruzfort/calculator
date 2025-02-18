@@ -32,6 +32,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
+    text-align: right;
+    word-break: break-all;
     opacity: .6;
 }
 
